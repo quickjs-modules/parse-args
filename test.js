@@ -7,9 +7,9 @@ const { test, run } = testsuite("parse");
 test("single flags", () => {
   const actual = Array.from(parse(["-foo", "-bar", "-baz"]));
   const expected = [
-    ["foo", true],
-    ["bar", true],
-    ["baz", true],
+    ["foo", null],
+    ["bar", null],
+    ["baz", null],
   ];
   isEqual(actual, expected);
 });

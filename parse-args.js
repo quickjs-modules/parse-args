@@ -9,14 +9,14 @@ export function* parse(args) {
     if (_isFlag(arg)) {
       const flagName = _flagName(arg);
       if (isLast) {
-        yield [flagName, true];
+        yield [flagName, null];
         break;
       }
       let i = 0;
       for (const _a of args) {
         if (_isFlag(_a)) {
           if (i === 0) {
-            yield [flagName, true];
+            yield [flagName, null];
             continue outer;
           }
           break;

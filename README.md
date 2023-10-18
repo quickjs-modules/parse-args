@@ -23,7 +23,7 @@ qjs script.js foo bar baz -flag some_argument -some-other-flag
     [ARGUMENT, 'bar'],
     [ARGUMENT, 'baz'],
     ['flag', 'some_argument'],
-    ['some-other-flag', true],
+    ['some-other-flag', null],
 ]
 ```
 
